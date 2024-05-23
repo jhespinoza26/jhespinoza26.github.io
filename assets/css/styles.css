@@ -226,11 +226,14 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  z-index: 1; /* Menor para que quede debajo del texto */
 }
 
 .home_img svg {
   width: 100%;
+  height: auto;
 }
 
 /* BUTTONS */
@@ -560,4 +563,10 @@ img {
   .home_img {
     right: 10%;
   }
+}
+
+
+.home_data {
+  position: relative; /* Asegura que los textos estén por encima de la imagen */
+  z-index: 2; /* Más alto para que se muestre por encima de la imagen */
 }
