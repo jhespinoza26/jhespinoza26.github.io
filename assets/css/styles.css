@@ -596,6 +596,19 @@ img {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .bd_grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home_img {
+    right: 0;
+    width: 70%;
+    z-index: 1; /* Menor para que quede debajo del texto */
+  }
+}
+
 .home_data {
   position: relative; /* Asegura que los textos estén por encima de la imagen */
   z-index: 2; /* Más alto para que se muestre por encima de la imagen */
