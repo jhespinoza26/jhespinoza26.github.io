@@ -581,7 +581,22 @@ img {
 }
 
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1280px) {
+  .bd_grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home_img {
+    right: 5%;
+    bottom: 40%;
+    width: 100%;
+    max-width: 300px;
+    z-index: 1; /* Menor para que quede debajo del texto */
+  }
+}
+
+@media screen and (min-width: 1920px) {
   .bd_grid {
     margin-left: auto;
     margin-right: auto;
