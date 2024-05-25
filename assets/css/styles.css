@@ -637,6 +637,19 @@ img {
     z-index: 1; /* Menor para que quede debajo del texto */
   }
 
+}
+
+@media screen and (max-width: 570px) and (max-height: 1280px) and (min-height: 700px) {
+  .bd_grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home_img {
+    right: 0;
+    width: 90%;
+    z-index: 1; /* Menor para que quede debajo del texto */
+  }
 
 }
 
