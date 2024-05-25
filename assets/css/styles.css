@@ -437,14 +437,28 @@ img {
 }
 
 /* Footer */
+
 .footer {
-  background-image: url(bannerGordo.png);
-  background-size: 950px;
-  color: #fff;
+  position: relative;
+  color: #020002;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
 }
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(bannerGordo.png);
+  background-size: 100%;
+  opacity: 0.7; /* Ajusta este valor para cambiar la opacidad */
+  z-index: -1;
+}
+
 
 .footer_title {
   font-size: 2rem;
@@ -457,7 +471,7 @@ img {
 
 .footer_icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: #0a0000;
   margin: 0 var(--mb-2);
 }
 
@@ -622,6 +636,8 @@ img {
     width: 40%;
     z-index: 1; /* Menor para que quede debajo del texto */
   }
+
+
 }
 
 .home_data {
