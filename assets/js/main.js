@@ -43,7 +43,7 @@ async function handleSubmit(event){
     })
     if(response.ok){
         this.reset()
-        swal("Mensaje Enviado!", "Te contactaré pronto!", "success");
+        swal("Message Sent!", "I will contact you soon!", "success");
     }
 
 }
